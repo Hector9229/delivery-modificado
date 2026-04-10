@@ -6,7 +6,7 @@
     <title>Delivery — Variante B (A/B)</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./styles-ab-b.css" />
-    
+  
     <!-- INSERTAR SCRIPT DE CLARITY AQUÍ -->
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
@@ -15,7 +15,6 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "w9pcebtpvf");
     </script>
-
     <style>
       /* =============== DARK MODE =============== */
       :root {
@@ -26,7 +25,6 @@
         --border: #dddddd;
         --accent: #e63939;
       }
-
       body.dark {
         --bg: #121212;
         --text: #eeeeee;
@@ -34,33 +32,27 @@
         --card-bg: #1e1e1e;
         --border: #333333;
       }
-
       body {
         background-color: var(--bg);
         color: var(--text);
         transition: background-color 0.3s, color 0.3s;
       }
-
       .panel, .lista-cards, .lista-platos, .lista-resumen {
         background-color: var(--card-bg);
       }
-
       .header, .footer {
         background-color: var(--card-bg);
         border-color: var(--border);
       }
-
       .sticky-cta {
         background: var(--card-bg);
         border-top: 1px solid var(--border);
       }
-
       .btn-ghost-small, .btn-faint {
         background-color: var(--card-bg);
         color: var(--text);
         border: 1px solid var(--border);
       }
-
       /* Botón "Cambiar sitio" más grande */
       .btn-cambiar-sitio {
         font-size: 1.1rem;
@@ -74,15 +66,12 @@
         font-weight: 500;
         text-align: left;
       }
-
       .btn-cambiar-sitio:hover {
         background: var(--border);
       }
     </style>
-    
   </head>
   <body data-ab-variant="b" class="dark">
-
     <header class="header">
       <div class="header-top">
         <img src="./assets/logo-delivery-b.svg" width="44" height="44" alt="" class="header-logo" />
@@ -139,14 +128,14 @@
       <section id="step-resumen" class="panel" hidden>
         <h2>Resumen del pedido</h2>
         <p class="muted">Confirmá el total. Para sumar platos, volvé al menú con el botón de abajo.</p>
-        
+      
         <ul id="lista-resumen" class="lista-resumen"></ul>
         <p id="resumen-vacio" class="muted">Nada seleccionado.</p>
-        
+      
         <p class="total-line">
           Total estimado: <strong id="total-delivery">0,00 €</strong>
         </p>
-        
+      
         <div class="actions">
           <button type="button" class="btn btn-ghost-small" id="btn-seguir-comprando">
             Agregar más
@@ -167,7 +156,7 @@
     </main>
 
     <footer class="footer">
-      <small>RushEats — variante B (A/B)</small>
+      <small>EatEats</small>
     </footer>
 
     <script src="./script.js"></script>
